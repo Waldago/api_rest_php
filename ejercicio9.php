@@ -6,15 +6,18 @@
 
         $valorB=$_POST['valorB'];
 
-        $suma=$valorA + $valorB;
+        if($valorA != $valorB){
+            echo "Los valores son diferentes"."<br>";
+        }else echo "Los valores son iguales"."<br>";
 
-        $resta=$valorA - $valorB;
+        if($valorA>$valorB){
+            echo "A es mayor que B"."<br>";
+        }
+        else if ($valorA<$valorB){
+            echo "B es mayor que A"."<br>";
+        }
+        else echo "Los valores son iguales"."<br>";
 
-        $multi=$valorA * $valorB;
-
-        $div=$valorA / $valorB;
-
-        echo "Suma: ".$suma."<br>"."Resta: ".$resta."<br>"."Multiplicacion: ".$multi."<br>"."Division: ".$div;
     }
 ?>
 
@@ -29,7 +32,7 @@
 </head>
 <body>
     
-    <form action="ejercicio8.php" method="post">
+    <form action="ejercicio9.php" method="post">
 
         valor A:
         <input type="text" name="valorA" id="">
