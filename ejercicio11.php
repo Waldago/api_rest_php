@@ -15,7 +15,27 @@
         $div=$valorA / $valorB;
 
         echo "Suma: ".$suma."<br>"."Resta: ".$resta."<br>"."Multiplicacion: ".$multi."<br>"."Division: ".$div;
+    
+        if($valorA==$valorB){
+            
+            echo "El valor de A es igual a B <br/>";
+
+            if($valorA==4){
+
+                echo "El valor de A es 4 <br/>";
+
+            }
+
+            if($valorA==5){
+
+                echo "El valor de A es 5 <br/>";
+                
+            }
+
+        }
+        
     }
+
 ?>
 
 
@@ -29,7 +49,7 @@
 </head>
 <body>
     
-    <form action="ejercicio8.php" method="post">
+    <form action="ejercicio11.php" method="post">
 
         valor A:
         <input type="text" name="valorA" id="">
