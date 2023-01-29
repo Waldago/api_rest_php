@@ -12,9 +12,21 @@
 
         $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        $sql="INSERT INTO `fotos` (`id`, `nombre`, `ruta`) VALUES (NULL, 'Jugando con la programacion', 'foto.jpg');";
+        $sql="SELECT * FROM `fotos`";
 
-        $conexion->exec($sql);
+        $sentencia=$conexion->prepare($sql);
+
+        $sentencia->execute();
+
+        $resultado=$sentencia->fetchAll();
+
+        //print_r($resultado);
+
+        foreach($resultado as $foto){
+
+            //print_r($foto);
+            echo $foto['nombre']."<br>";
+        }
         
         echo "Conexion establecida";
 
