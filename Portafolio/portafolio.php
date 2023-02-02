@@ -8,22 +8,33 @@ $resultado=$objConexion->consultar($sql);
     if($_POST){
 
         //print_r($_POST);    
+        $fecha=new DateTime();
         $nombre=$_POST['nombre'];
-        //$imagen=$_POST['archivo'];
+        $imagen=$fecha->getTimestamp()."_".$_FILES['archivo']['name'];
         $descripcion=$_POST['desc'];
+        
+
+        $imagenTemp=$_FILES['archivo']['tmp_name'];
+        move_uploaded_file($imagenTemp,"imagenes/".$imagen);
 
         $objConexion=new Conexion();
-        $sql="INSERT INTO `proyecto` (`id`, `nombre`, `imagen`, `descripcion`) VALUES (NULL, '$nombre', 'imagen.jpg', '$descripcion');";
+        $sql="INSERT INTO `proyecto` (`id`, `nombre`, `imagen`, `descripcion`) VALUES (NULL, '$nombre', '$imagen', '$descripcion');";
         $objConexion->ejecutar($sql);
+        header("location: portafolio.php");
 
     }
 
     if($_GET){
         $id=$_GET['borrar'];
         $objConexion=new Conexion();
+
+        $imagen=$objConexion->consultar("SELECT imagen FROM `proyecto` WHERE id=".$id);
+        unlink("imagenes/".$imagen[0]['imagen']);
+
         $sql="delete from `proyecto` where `proyecto`.`id`=".$id;
         $objConexion->ejecutar($sql);
-    }
+        header("location: portafolio.php");      
+     }
 
 ?>
 <br>
@@ -40,13 +51,13 @@ $resultado=$objConexion->consultar($sql);
                     <form action="portafolio.php" method="post" enctype="multipart/form-data">
 
                         Nombre del proyecto:
-                        <input class="form-control" type="text" name="nombre" id="">
+                        <input required class="form-control" type="text" name="nombre" id="">
                         <br>
                         Imagen del proyecto:
-                        <input class="form-control" type="file" name="archivo" id="">
+                        <input required class="form-control" type="file" name="archivo" id="">
                         <br>
                         Descripcion del proyecto:
-                        <input class="form-control" type="text" name="desc" id="">
+                        <textarea class="form-control" name="desc" id="" rows="3"></textarea>                        
                         <br>
                         <input class="btn btn-success" type="submit" value="Enviar">
 
@@ -74,7 +85,7 @@ $resultado=$objConexion->consultar($sql);
                         <tr class="">
                             <td scope="row"><?php echo $proyecto["id"]; ?></td>
                             <td><?php echo $proyecto["nombre"]; ?></td>
-                            <td><?php echo $proyecto["imagen"]; ?></td>
+                            <td><img width="100" height="100" src="imagenes/<?php echo $proyecto["imagen"]; ?>" alt=""></td>
                             <td><?php echo $proyecto["descripcion"]; ?></td>
                             <td><a name="" id="" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id']; ?>" role="button">Eliminar</a></td>
                         </tr>
