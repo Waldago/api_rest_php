@@ -19,5 +19,12 @@
 
             }else return false;
         }
+
+        public function view(){
+
+            $consulta="SELECT * FROM 'producto'";
+            $resultado=$this->db->query($consulta);
+            
+        }
     }
 ?>
