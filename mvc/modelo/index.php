@@ -26,9 +26,9 @@
             $consulta="SELECT * FROM ".$tabla." WHERE ".$condicion.";";
             $resultado=$this->db->query($consulta);
             while($filas = $resultado->fetchAll(PDO::FETCH_ASSOC)){
-                $this->$datos[]=$filas;
+                $this->datos[]=$filas;
             }
-            return $this->$datos;
+            return $this->datos;
         }
 
         public function actualizar($tabla, $data, $condicion){
