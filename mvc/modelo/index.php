@@ -4,6 +4,7 @@
 
         private $modelo;
         private $db;
+        private $datos;
 
         public function __construct(){
             $this->modelo=array();
@@ -11,8 +12,8 @@
 
         }
         
-        public function insert($data){
-            $consulta="INSERT INTO 'producto'() VALUES (null,".$data.")";
+        public function insert($tabla,$data){
+            $consulta="INSERT INTO $tabla VALUES (null,".$data.")";
             $resultado=$this->db->query($consulta);
             if($resultado){
                 return true;
@@ -20,11 +21,32 @@
             }else return false;
         }
 
-        public function view(){
+        public function view($tabla,$condicion){
 
-            $consulta="SELECT * FROM 'producto'";
+            $consulta="SELECT * FROM ".$tabla." WHERE ".$condicion.";";
             $resultado=$this->db->query($consulta);
-            
+            while($filas = $resultado->fetchAll(PDO::FETCH_ASSOC)){
+                $this->$datos[]=$filas;
+            }
+            return $this->$datos;
+        }
+
+        public function actualizar($tabla, $data, $condicion){
+            $consulta="UPDATE ".$tabla." SET ".$data." WHERE ".$condicion.";";
+            $resultado=$this->db->query($consulta);
+            if($resultado){
+                return true;
+
+            }else return false;
+        }
+
+        public function eliminar($tabla, $condicion){
+            $consulta="DELETE FROM ".$tabla." WHERE ".$condicion.";";
+            $resultado=$this->db->query($consulta);
+            if($resultado){
+                return true;
+
+            }else return false;
         }
     }
 ?>

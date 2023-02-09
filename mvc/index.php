@@ -2,9 +2,9 @@
 
     require_once("config.php");
 
-    var_dump(urlsite);
+    require_once("control/index.php")
 
-    phpinfo();
+    ModeloController::index();
 
 
 ?>
