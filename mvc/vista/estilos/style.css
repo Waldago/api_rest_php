@@ -8,3 +8,7 @@
     text-align: center;
     color: blue;
 }
+
+table, tr, td{
+    border: 1px solid black;
+}
