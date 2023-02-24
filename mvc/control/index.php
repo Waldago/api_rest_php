@@ -35,11 +35,19 @@
         }
 
         static function actualizar(){
+            $id= $_REQUEST['id'];
             $nombre= $_REQUEST['nombre'];
             $precio= $_REQUEST['precio'];
-            $data="'".$nombre."',".$precio;
+            $data="nombre='".$nombre."',precio=".$precio;
             $producto = new Modelo();
-            $dato = $producto->insert("producto",$data);
+            $dato = $producto->actualizar("producto",$data,"id=".$id);
+            header("location:".urlsite);
+        }
+
+        static function eliminar(){
+            $id= $_REQUEST['id'];
+            $producto= new Modelo();
+            $dato= $producto->eliminar("producto","id=".$id);
             header("location:".urlsite);
         }
 

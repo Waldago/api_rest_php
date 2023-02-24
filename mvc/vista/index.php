@@ -23,7 +23,7 @@ require_once("layouts/header.php");
                         <td><?php echo $v['nombre'] ?></td>
                         <td>
                             <a class="btn" href="index.php?m=editar&id=<?php echo $v['id']?>">editar</a>
-                            <a class="btn" href="index.php?m=eliminar&id=<?php echo $v['id']?>">Eliminar</a>
+                            <a class="btn" href="index.php?m=eliminar&id=<?php echo $v['id']?>" onclick="return confirm('Esta seguro que desea borrar este registro?');false">Eliminar</a>
                         </td>
                     </tr>
                 <?php } ?>
