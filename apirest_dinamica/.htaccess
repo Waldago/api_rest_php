@@ -1,0 +1,8 @@
+Options All -indexes
+#Esto funciona para que no puedan navegar en nuestras carpetas del proyecto y acceder a informacion que no queremos, por el navegador.
+Options -MultiViews
+#Permite trabajar con las urls amigables siempre y cuando tenga en "on" REWRITEENGINE
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

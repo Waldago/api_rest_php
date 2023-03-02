@@ -1,0 +1,21 @@
+Configuracion de apache
+
+en la carpeta C:\xampp\apache\conf\extra
+buscar el archivo "httpd-vhosts.conf"
+y pego:
+
+<VirtualHost *:80>
+	DocumentRoot "C:/xampp/htdocs/Curso_php_ejercicios/apirest_dinamica"
+	serverName apirest.com
+</VirtualHost>
+*Esto es para redireccionar 
+
+luego voy a la carpeta C:\Windows\System32\drivers\etc
+y busco el archivo "hosts"
+y pego:
+
+	127.0.0.1		apirest.com
+*Esto es para que si existiera en internet otra pagina con el mismo nombre de mi proyecto, lo redireccione igual a donde yo quiero
+
+Luego paro los servicios del xampp y los vuelvo a lanzar, para que tome la nueva Configuracion.
+
