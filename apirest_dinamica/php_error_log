@@ -38,3 +38,183 @@ Stack trace:
 #5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:41:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'base-1.categories' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('categories')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('categories')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:41:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:08 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:45 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:45 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 15:42:45 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:35:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:37:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(7): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:50:03 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=id' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'id')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(8): GetController::getData('courses?select=...', 'id')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:50:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=id_product' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'id_product')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(8): GetController::getData('courses?select=...', 'id_product')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:51:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=id' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'id')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'id')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:52:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=title' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'title')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'title')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:53:21 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=title' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'title')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'title')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:53:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=title' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'title')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'title')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:55:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=id' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'id')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'id')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 18:56:57 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?select=id' at line 1 in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('courses?select=...', 'id')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('courses?select=...', 'id')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11

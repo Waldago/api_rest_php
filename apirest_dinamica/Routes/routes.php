@@ -21,7 +21,7 @@
     
     if(!empty($routesArray) && isset($_SERVER['REQUEST_METHOD'] )){
 
-        echo '<pre>'; print_r($_SERVER['REQUEST_METHOD']); echo '</pre>';
+        // echo '<pre>'; print_r($_SERVER['REQUEST_METHOD']); echo '</pre>';
 
         if($_SERVER['REQUEST_METHOD']=='GET'){
             include("Service/get.php");
