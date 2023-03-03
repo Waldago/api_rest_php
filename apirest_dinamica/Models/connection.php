@@ -1,8 +1,7 @@
 <?php
 
-use PgSql\Connection;
-
     class Conection{
+
         /*Informacion de la base de datos*/
         static public function infoDataBase(){
             $infoDB = array(
@@ -12,6 +11,7 @@ use PgSql\Connection;
             );
             return $infoDB;
         }
+
         /*Conexion a la base de datos*/
         static public function connect(){
             try{

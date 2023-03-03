@@ -8,9 +8,6 @@
     
     //Requerimientos
     require_once("models/connection.php");
-    echo '<pre>';
-    print_r(Conection::connect());
-    echo '</pre>';
 
     require_once("Controllers/routes.controller.php");
     

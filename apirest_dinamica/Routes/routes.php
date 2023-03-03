@@ -24,14 +24,7 @@
         echo '<pre>'; print_r($_SERVER['REQUEST_METHOD']); echo '</pre>';
 
         if($_SERVER['REQUEST_METHOD']=='GET'){
-            $json = array (
-                'status'=>200,
-                'result'=>'Solicitud GET'
-            );
-        
-            echo json_encode($json, http_response_code($json["status"]));
-        
-            return;
+            include("Service/get.php");
         }
 
         if($_SERVER['REQUEST_METHOD']=='POST'){
