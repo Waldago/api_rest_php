@@ -279,3 +279,21 @@ Stack trace:
 #5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 12
+[07-Mar-2023 19:29:27 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function GetModel::getData(), 2 passed in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php on line 9 and exactly 4 expected in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:6
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(9): GetModel::getData('courses', 'id')
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(24): GetController::getData('courses', 'id', 'id', 'DESC')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 6
+[07-Mar-2023 19:32:33 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function GetModel::getData(), 2 passed in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php on line 9 and exactly 4 expected in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:6
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(9): GetModel::getData('courses', 'id')
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(24): GetController::getData('courses', 'id', 'id', 'DESC')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 6
