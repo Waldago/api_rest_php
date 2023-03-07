@@ -19,7 +19,7 @@ class GetModel{
         $linkToArray = explode(",", $linkTo);
         $equalToArray = explode("_", $equalTo);
         $linkToTxt = "";
-
+        //Esto va a concatenar con un and los filtros que recibamos a partir de tener mas de 1
         if(count($linkToArray)>1){
             foreach($linkToArray as $key => $value){
                 if($key>0){
