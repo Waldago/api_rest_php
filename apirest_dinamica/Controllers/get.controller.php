@@ -5,7 +5,15 @@ require("Models/get.model.php");
 class GetController{
 
     static public function getData($table,$select){
+        /*Peticion get sin filtro*/
         $response= GetModel::getData($table,$select);
+        $return = new GetController();
+        $return->fncResponse($response);
+    }
+
+    static public function getDataFilter($table,$select,$linkTo,$equalTo){
+        /* linkTo es la columna y el equalTo es el contenido de esa columna*/
+        $response= GetModel::getDataFilter($table,$select,$linkTo,$equalTo);
         $return = new GetController();
         $return->fncResponse($response);
     }

@@ -4,10 +4,22 @@ require("Controllers/get.controller.php");
 $table= explode("?",$routesArray[1])[0];
 $select= $_GET["select"]??"*";
 
-echo $select;
+//echo $select;
+/*Respuesta del controlador, me fijo que variables vienen y que metodo va a usar */
 
 $response=new GetController();
-$response->getData($table,$select);
+
+/*Peticion get con filtro*/
+if(isset($_GET["LinkTo"]) && isset($_GET["equalTo"])){
+    $response->getDataFilter($table,$select,$_GET["LinkTo"],$_GET["equalTo"]);
+}else{
+
+    /*Peticion get sin filtro*/
+    $response->getData($table,$select);
+}
+
+
+
 /*
 $json = array (
     'status'=>200,

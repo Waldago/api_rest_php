@@ -218,3 +218,44 @@ Stack trace:
 #5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 19:07:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[03-Mar-2023 19:07:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[06-Mar-2023 13:05:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(11): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(8): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(10): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 11
+[06-Mar-2023 13:37:42 Europe/Berlin] PHP Warning:  Undefined array key "LinkTo" in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php on line 6
+[06-Mar-2023 15:37:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\get.controller.php(9): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\Service\get.php(18): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Routes\routes.php(27): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Controllers\routes.controller.php(9): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\index.php(17): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\Curso_php_ejercicios\apirest_dinamica\Models\get.model.php on line 12
