@@ -4,18 +4,24 @@ require("Models/get.model.php");
 
 class GetController{
 
-    static public function getData($table, $select, $orderBy, $orderMode){
+    static public function getData($table, $select, $orderBy, $orderMode, $startAt, $endAt){
         /*Peticion get sin filtro*/
-        $response= GetModel::getData($table, $select, $orderBy, $orderMode);
+        $response= GetModel::getData($table, $select, $orderBy, $orderMode, $startAt, $endAt);
         $return = new GetController();
         $return->fncResponse($response);
     }
 
-    static public function getDataFilter($table, $select, $linkTo, $equalTo, $orderBy, $orderMode){
+    static public function getDataFilter($table, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt){
         /* linkTo es la columna y el equalTo es el contenido de esa columna*/
-        $response= GetModel::getDataFilter($table, $select, $linkTo, $equalTo, $orderBy, $orderMode);
+        $response= GetModel::getDataFilter($table, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt);
         $return = new GetController();
         $return->fncResponse($response);
+    }
+
+    static public function getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt){
+        $responce = GetModel::getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
+        $return = new GetController();
+        $return->fncResponse($responce);
     }
 
     public function fncResponse($response){

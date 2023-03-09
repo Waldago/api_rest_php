@@ -10,18 +10,29 @@ $orderBy = $_GET["orderBy"] ?? null;
 
 $orderMode = $_GET["orderMode"] ?? null;
 
+$startAt = $_GET["startAt"] ?? null;
+
+$endAt = $_GET["endAt"] ?? null;
+
+$rel = $_GET["rel"] ?? null;
+
+$type = $_GET["type"] ?? null;
+
 //echo $select;
 /*Respuesta del controlador, me fijo que variables vienen y que metodo va a usar */
 
 $response=new GetController();
 
-/*Peticion get con filtro*/
-if(isset($_GET["LinkTo"]) && isset($_GET["equalTo"])){
-    $response->getDataFilter($table, $select, $_GET["LinkTo"], $_GET["equalTo"], $orderBy, $orderMode);
-}else{
 
+if(isset($_GET["LinkTo"]) && isset($_GET["equalTo"])){
+    /*Peticion get con filtro*/
+    $response->getDataFilter($table, $select, $_GET["LinkTo"], $_GET["equalTo"], $orderBy, $orderMode, $startAt, $endAt);
+}else if($rel != null && $type != null && $table == "relations" && !isset($_GET["LinkTo"]) && !isset($_GET["equalTo"])){
+    /*Peticion get sin filtro con join*/
+    $responce-> getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
+}else{
     /*Peticion get sin filtro*/
-    $response->getData($table, $select, $orderBy, $orderMode);
+    $response->getData($table, $select, $orderBy, $orderMode, $startAt, $endAt);
 }
 
 
