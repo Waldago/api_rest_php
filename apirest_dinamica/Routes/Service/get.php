@@ -29,7 +29,7 @@ if(isset($_GET["LinkTo"]) && isset($_GET["equalTo"])){
     $response->getDataFilter($table, $select, $_GET["LinkTo"], $_GET["equalTo"], $orderBy, $orderMode, $startAt, $endAt);
 }else if($rel != null && $type != null && $table == "relations" && !isset($_GET["LinkTo"]) && !isset($_GET["equalTo"])){
     /*Peticion get sin filtro con join*/
-    $responce-> getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
+    $response-> getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
 }else{
     /*Peticion get sin filtro*/
     $response->getData($table, $select, $orderBy, $orderMode, $startAt, $endAt);

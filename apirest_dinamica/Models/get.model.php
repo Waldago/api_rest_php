@@ -79,23 +79,32 @@ class GetModel{
     static public function getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt){
         $relArray = explode(",", $rel);
         $typeArray = explode(",", $type);
+        $innerJoinTxt= "";
+       
+        if(count($relArray)>1){
+            foreach($relArray as $key => $value){
+                if($key>0){
+                    $innerJoinTxt .= "INNER JOIN ".$value." ON ".$relArray[$key-1].".".$typeArray[$key-1]." = ".$relArray[$key].".".$typeArray[$key];
+                }
+            }
+        
         /*Peticion get sin filtro pero ordenada*/
         if($orderBy != null and $orderMode != null){
             if($startAt == null and $endAt == null){
                 /*Peticion get sin filtro ordenada pero sin limite*/
-                $sql="SELECT $select FROM $relArray[0] INNER JOIN $relArray[1] ON $relArray[0].$typeArray[0] = $relArray[1].$typeArray[1] ORDER BY $orderBy $orderMode";
+                $sql="SELECT $select FROM $relArray[0] $innerJoinTxt ORDER BY $orderBy $orderMode";
             }else{
                 /*Peticion get sin filtro ordenada con limite*/
-                $sql="SELECT $select FROM $relArray[0] INNER JOIN $relArray[1] ON $relArray[0].$typeArray[0] = $relArray[1].$typeArray[1] ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
+                $sql="SELECT $select FROM $relArray[0] $innerJoinTxt ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
             }
             
         } else{
             if($startAt == null and $endAt == null){
                 /*Peticion get sin filtro, sin orden y sin limite*/
-                $sql="SELECT $select FROM $relArray[0] INNER JOIN $relArray[1] ON $relArray[0].$typeArray[0] = $relArray[1].$typeArray[1]";
+                $sql="SELECT $select FROM $relArray[0] $innerJoinTxt";
             }else{
                 /*Peticion get sin filtro con limite*/
-                $sql="SELECT $select FROM $relArray[0] INNER JOIN $relArray[1] ON $relArray[0].$typeArray[0] = $relArray[1].$typeArray[1] LIMIT $startAt, $endAt";
+                $sql="SELECT $select FROM $relArray[0] $innerJoinTxt LIMIT $startAt, $endAt";
             }
             
         }
@@ -104,6 +113,8 @@ class GetModel{
         $stmt-> execute();
         
         return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }
+        else return null;
     }
 }
 
