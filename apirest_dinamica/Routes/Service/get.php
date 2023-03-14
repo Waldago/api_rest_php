@@ -24,13 +24,20 @@ $type = $_GET["type"] ?? null;
 $response=new GetController();
 
 
-if(isset($_GET["LinkTo"]) && isset($_GET["equalTo"])){
+if($rel == null && $type == null && $table != "relations" &&isset($_GET["linkTo"]) && isset($_GET["equalTo"])){
     /*Peticion get con filtro*/
-    $response->getDataFilter($table, $select, $_GET["LinkTo"], $_GET["equalTo"], $orderBy, $orderMode, $startAt, $endAt);
-}else if($rel != null && $type != null && $table == "relations" && !isset($_GET["LinkTo"]) && !isset($_GET["equalTo"])){
+    $response->getDataFilter($table, $select, $_GET["linkTo"], $_GET["equalTo"], $orderBy, $orderMode, $startAt, $endAt);
+}
+else if($rel != null && $type != null && $table == "relations" && !isset($_GET["linkTo"]) && !isset($_GET["equalTo"])){
     /*Peticion get sin filtro con join*/
     $response-> getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
-}else{
+}
+else if($rel != null && $type != null && $table == "relations" && isset($_GET["linkTo"]) && isset($_GET["equalTo"])){
+    /*Peticion get con filtro con join*/
+    $response-> getRelDataFilter($rel, $type, $select, $_GET["linkTo"], $_GET["equalTo"],$orderBy, $orderMode, $startAt, $endAt);
+    
+}
+else{
     /*Peticion get sin filtro*/
     $response->getData($table, $select, $orderBy, $orderMode, $startAt, $endAt);
 }

@@ -24,6 +24,12 @@ class GetController{
         $return->fncResponse($responce);
     }
 
+    static public function getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt){
+         $responce = GetModel::getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt);
+         $return = new GetController();
+         $return->fncResponse($responce);
+     }
+
     public function fncResponse($response){
         if(!empty($response)){
             $json = array (
