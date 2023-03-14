@@ -30,12 +30,14 @@ if($rel == null && $type == null && $table != "relations" &&isset($_GET["linkTo"
 }
 else if($rel != null && $type != null && $table == "relations" && !isset($_GET["linkTo"]) && !isset($_GET["equalTo"])){
     /*Peticion get sin filtro con join*/
-    $response-> getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
+    $response->getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt);
 }
 else if($rel != null && $type != null && $table == "relations" && isset($_GET["linkTo"]) && isset($_GET["equalTo"])){
     /*Peticion get con filtro con join*/
-    $response-> getRelDataFilter($rel, $type, $select, $_GET["linkTo"], $_GET["equalTo"],$orderBy, $orderMode, $startAt, $endAt);
-    
+    $response->getRelDataFilter($rel, $type, $select, $_GET["linkTo"], $_GET["equalTo"],$orderBy, $orderMode, $startAt, $endAt);
+}
+else if(isset($_GET["search"]) && isset($_GET["linkTo"])){
+    $response->getDataSearch($table, $select, $_GET["linkTo"], $_GET["search"], $orderBy, $orderMode, $startAt, $endAt);
 }
 else{
     /*Peticion get sin filtro*/

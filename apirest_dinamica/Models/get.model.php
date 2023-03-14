@@ -178,6 +178,28 @@ class GetModel{
         }
         else return null;
     }
+
+    static public function getDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+    /*Peticion get sin filtro pero ordenada*/
+    $sql= "SELECT $select FROM $table WHERE $linkTo LIKE '%$search%'";
+
+    if($orderBy != null && $orderMode != null){
+        if($startAt == null && $endAt == null){
+            /*Peticion get sin filtro ordenada pero sin limite*/
+            $sql=$sql."ORDER BY $orderBy $orderMode";
+        }else{
+            /*Peticion get sin filtro ordenada con limite*/
+            $sql=$sql."ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
+        }
+        
+    }else if($startAt != null && $endAt != null){
+        $sql=$sql."LIMIT $startAt, $endAt";
+    }
+
+    $stmt = Conection::connect()->prepare($sql);
+    $stmt-> execute();
+    return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
 }
 
 ?>

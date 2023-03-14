@@ -25,10 +25,16 @@ class GetController{
     }
 
     static public function getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt){
-         $responce = GetModel::getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt);
-         $return = new GetController();
-         $return->fncResponse($responce);
+        $responce = GetModel::getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt);
+        $return = new GetController();
+        $return->fncResponse($responce);
      }
+
+    static public function getDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+        $responce = GetModel::getDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt);
+        $return = new GetController();
+        $return->fncResponse($responce);
+    }
 
     public function fncResponse($response){
         if(!empty($response)){
